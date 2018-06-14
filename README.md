@@ -1,8 +1,8 @@
-# FontAwesome5 in PHP
+# FontAwesome5 JS SVG in PHP
 
 Implements a workflow for using native SVG elements in your PHP code using Gulp pre-compilation. Plus added Wordpress-specific functionality.
 
-Written using ES5 syntax.
+Written using ES5 syntax, ES6 file provided.
 
 ## Rationale
 
@@ -37,3 +37,13 @@ Obviously you'll need to be using **Gulp**, but the setup is very simple, and do
 You'll also need to install the `@fortawesome/*` package(s) you want to use. [See the NodeJS tutorial here.](https://fontawesome.com/how-to-use/use-with-node-js "FA 5 Use with NodeJS")
 
 All dependencies are in the provided `package.json`
+
+## Tips
+
+- Don't put this in your `watch` task unless you want to compile it with every run.
+
+- Currently you'll need to restart Gulp to add more icons as they're edited inside the job.
+
+- Uses Gulp `v4.\*.\*` functions. If you get errors like `gulp.series is not a function` check you're not using `v3.\*.\*`.
+
+- To switch to **ES6**, delete `gulpfile.js` and rename `gulpfile.js.ES6`.

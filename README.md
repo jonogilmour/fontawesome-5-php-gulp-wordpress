@@ -35,3 +35,5 @@ All are dev dependencies as we aren't using NodeJS in prod with PHP.
 Obviously you'll need to be using **Gulp**, but the setup is very simple, and doesn't necessarily need to rely on PHP, this is just the integration I've used as PHP doesn't have a nice way of integrating with the FontAwesome libraries.
 
 You'll also need to install the `@fortawesome/*` package(s) you want to use. [See the NodeJS tutorial here.](https://fontawesome.com/how-to-use/use-with-node-js "FA 5 Use with NodeJS")
+
+All dependencies are in the provided `package.json`

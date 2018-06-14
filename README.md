@@ -47,3 +47,15 @@ All dependencies are in the provided `package.json`
 - Uses Gulp `v4.\*.\*` functions. If you get errors like `gulp.series is not a function` check you're not using `v3.\*.\*`.
 
 - To switch to **ES6**, delete `gulpfile.js` and rename `gulpfile.js.ES6`.
+
+## Wordpress Implementation
+
+Provided is a suite of actions/filters to easily put FA icon markup into your WordPress templates. The functions are documented, so please see `wordpress.php` for the specifics.
+
+In practice, you just need to include the PHP somewhere in your theme or plugin, and use:
+
+```do_action('fa-icon', 'fa-times-circle')```
+
+If you're not using the set folder structure provided (ie. templates stored in `path-to-theme/fa/`), or if you're not storing your FA icon templates in `.php` files, I've marked the places you'll need to change with `EDIT: ...` comments.
+
+Of course, to use this action effectively, you'll need to ensure the icon you want to print is included in your gulpfile.
